@@ -13,6 +13,7 @@ import HomeDetail from './HomeDetail';
 var Dimensions =require('Dimensions')
 var {width, height} = Dimensions.get('window');
 import  HomeTopView from './HomeTopView'
+import  HomeMiddleView from './HomeMiddleView'
 export default class Home extends Component<Props> {
     _pressButton(){
         const {navigator} = this.props;
@@ -34,6 +35,7 @@ export default class Home extends Component<Props> {
                 {this.renderNavBar()}
                 <ScrollView>
                     <HomeTopView/>
+                    <HomeMiddleView/>
                 </ScrollView>
 
 
